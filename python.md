@@ -1,4 +1,40 @@
 ## Python
+identation - tab = 4 spaces
+
+## Reserved Words
+and
+except
+lambda
+with
+as
+finally
+nonlocal
+while
+assert
+false
+None
+yield
+break
+for
+not
+class
+from
+or
+continue
+global
+pass
+def
+if
+raise
+del
+import
+return
+elif
+in
+True
+else
+is
+try
 
 # Variables
 Um lugar nomeado, na memória, onde podemos armazenar dados
@@ -172,6 +208,24 @@ for i in range(5) : # first statement
     print('Done with i', i) # end of the first
 print('All')
 ```
+``` python
+x = 5
+if x < 10:
+	print('smaller')
+if x > 20:
+	peint('bigger')
+print('finis')
+```
+## Repeated steps
+``` python
+# repetir bloco identado enquanto for verdadeiro
+n = 5
+while n > 0:
+	print(n):
+	n = n-1
+print('blastoff!')
+````
+	
 ## Nested Decisions
 ``` python
 x = 42
