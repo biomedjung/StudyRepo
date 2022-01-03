@@ -1,9 +1,20 @@
 ## Python
 
 # Variables
+Um lugar nomeado, na memória, onde podemos armazenar dados
   Assingment
+  '=' assingment statemante
+``` python
+>>> x = 1.2
+``` 
+# Constants
+ Valores fixos
+ ``` python
+>>> print('hello world')
+ ```
+ 
 # Data Types Tipos Primitivos
-
+Half Types: Literals, Variables, Constants
 ``` python
  int = (7 , -4 , 0 , 9878)
  float = (4.5, 0,78, -15.28, 7.0)
@@ -63,7 +74,7 @@ print(nome.replace("Palosity", "Bananas"))
 5 / 2 == 2.5 # / divisão
 5 ** 2 == 25 # ** potência
 5 // 2 == 2  # // divisão inteira, sobra 1
-5 % 2 == 1 # % resto da divisão OU módulo,  o mesmo 1 que sobrou
+5 % 2 == 1 # % remainder, resto da divisão OU módulo,  o mesmo 1 que sobrou
 # == é igual?
 # = recebe
 pow (4,2) #  == 4 ** 2
@@ -75,6 +86,7 @@ pow (4,2) #  == 4 ** 2
 # - 2 **
 # - 3 *  /  //  % (quem aparece primeiro, se juntos)
 # - 4 + -
+# - 5 Esquerda p di
 
 n1 = int(input('Digite um número: ')) #= se le como "recebe"
 n2 = int(input('Digite un múmero: '))
