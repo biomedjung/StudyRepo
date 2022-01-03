@@ -1,5 +1,26 @@
 * Exercício 1
+``` python
+msg = 'Hello Earth!'
+print(msg)
+nome = input('Qual seu nome?')
+print('Olá', nome, ', seja bem vindo!')
+```
+
 * Exercício 2
+``` python
+dia = input('Dia?')
+mes = input('Mês?')
+ano = input('Ano?')
+print(dia, '/', mes, '/', ano)
+
+nzt = input('Enter your name: ')
+print('Hello', nzt )
+
+hrs = input("Enter Hours:")
+rate = input('Enter Rate:')
+pay = float(hrs) * float(rate)
+print('Pay:', pay)
+```
 * Exercício 3: crie um programa que leia dois números e mostre a soma entre eles
 
 ``` python
@@ -13,9 +34,48 @@ print('A soma entre {0} e {1} é igual a {2}'.format(n1, n2, s))
    A soma entre 5.0 e 6.0 é igual a 11.0
 ```
 * Exercício 4
+```` python
+
+# Faça um programa que leia algo que mostre na tela o seu tipo primitivo e todas as possiveis informações sobre
+x = input('Digite algo: ')
+print('O tipo primitivo de {} é: '.format(x), type(x))
+print('O que foi digitado é alfabético? ', x.isalpha())
+print('O que foi gigitado é numérico? ', x.isnumeric())
+print('O que foi digitado é alfanumérico? ', x.isalnum())
+print('O que foi digitado está tudo em maiúsculo? ', x.isupper())
+print('O que foi digitado está tudo em minúsculo? ', x.islower())
+print('O que foi digitado é somente espaço? ', x.isspace())
+print('O que foi digitado está capitalizado? ', x.iscapitalize()) # primeira letra Maiúscula?
+````
+
 * Exercício 5
+```` python
+# Montar um programa que pede um número, mostra seu antecessor e seu sucessor
+n = int(input('Digite um valor inteiro: '))
+ant = n - 1
+suc = n + 1
+print('O antecessor de {} vale {}, e o sucessor vale {}'.format(n, ant, suc))
+````
 * Exercício 6
+```` python
+# código que pede um número, retorna o dobro, triblo, e raiz quadrada
+n = int(input('Digite um valor inteiro:'))
+dobro = n * 2
+triplo = n * 3
+raiz = n ** (1/2)
+print('Sendo n = {} \n {} x 2 = {} \n {} x 3 = {} \n A raiz quadrada de {} vale {}'
+      . format(n, n, dobro, n, triplo, n, raiz))
+````
 * Exercício 7
+```` python
+# Duas notas de um aluno, calcula e mostra a média
+# confirmar o resultado!!! ordem de precedencia
+print('Olá, a minha função é calcular a média de duas avaliações do seu aluno!')
+n1 = float(input('Digite um valor: '))
+n2 = float(input('Digite outro valor: '))
+med = (n1 + n2)/2
+print('A média das notas vale {}'.format(med))
+````
 * Exercício 8: lê um valor em metros, converte em cm e mm lê um valor em metros, converte em cm e mm
 
 ``` python
@@ -117,14 +177,29 @@ print('O novo salario vale: {}'.format(novosal))
 ```
 * Exercício 14
 ``` python
-
->>>
+# converção de ºC para ºF
+c = float(input('Digite a temperatura em Celsius: '))
+f = c * 1.8 + 32
+# cada grau Fahrenheit equivale a 1.8 Celcius, e 32 graus de diferença
+print('{} ºC = {} ºF'.format(c, f))
+>>> Digite a temperatura em Celsius: 36
+    36.0 ºC = 96.8 ºF
 
 ```
 * Exercício 15
 ``` pyhton
+# Escreva um programa que pergunte a quantidade de Km percorridos por um carro alugado e a quantidade de dias pelos quais ele foi alugado.
+# Calcule o preço a pagar, sabendo que o carro custa R$60 por dia e R$0,15 por Km rodado.
 
->>>
+dist = float(input('Digite a distância percorrida: '))
+dia = float(input('Digite a quantidade de dias alugados: '))
+alug = dia * 60
+fuel = dist * 0.15
+pag = alug + fuel
+print('O valor total a ser pago, BRL{} de aluguel + BRL{} de combustivel, somam BRL{}'.format(alug, fuel, pag))
+>>>Digite a distância percorrida: 50
+   Digite a quantidade de dias alugados: 2
+   O valor total a ser pago, BRL120.0 de aluguel + BRL7.5 de combustivel, somam BRL127.5
 
 ```
 * Exercício 16: input num Real -> output a parte inteira
@@ -205,9 +280,13 @@ print(turma)
    ['b', 'd', 'a', 'c']
 
 ```
-* Exercício 21 Abre e reproduz um arquivo .mp3
+* Exercício 21 Abre e reproduz um arquivo .mp3 ??????????????????????
 ``` python
 import pygame
+pygame.init()
+pygame.mixer.music.load('music23.mp3')
+pygame.mixer.music.play()
+pygame.event.wait()
 >>>
 
 ```
